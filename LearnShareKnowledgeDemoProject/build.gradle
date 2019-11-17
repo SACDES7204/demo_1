@@ -10,16 +10,17 @@ buildscript {
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
+android {
+// ...
+aaptOptions.cruncherEnabled = false
+aaptOptions.useNewCruncher = false
+// ...
+}
+
 }
 
 allprojects {
     repositories {
         jcenter()
     }
-}
-android {
-// ...
-aaptOptions.cruncherEnabled = false
-aaptOptions.useNewCruncher = false
-// ...
 }
