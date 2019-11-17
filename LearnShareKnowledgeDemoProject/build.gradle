@@ -17,3 +17,9 @@ allprojects {
         jcenter()
     }
 }
+android {
+// ...
+aaptOptions.cruncherEnabled = false
+aaptOptions.useNewCruncher = false
+// ...
+}
